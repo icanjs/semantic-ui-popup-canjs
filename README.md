@@ -14,7 +14,8 @@ If you need to use SemanticUI Popup `callbacks` then you are probably a jQuery-s
 ## Demo
 
 See the included demo /demo/demo.html (run `npm install`, then `http-server` in the project root and browse /demo/demo.html).
-![Popup Demo](./dist/demo.png)
+
+![Popup Demo](./demo/demo-popup.png) ![Popup Demo 2](./demo/demo-popup2.png)
 
 ## Installation
 ```
