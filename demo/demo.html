@@ -1,0 +1,75 @@
+<!-- CSS is build from semantic-ui-less with the default theme. It includes `definitions/modules/popup` and `definitions/modules/transition`.-->
+
+<style>.demo{padding:10px 20px}.demo p{margin-top:50px}.demo .vertical.menu.popup{padding:0!important}</style>
+
+<script type="text/stache" id="demo" can-autorender>
+  <can-import from="popup-attr" />
+  <can-import from="demo/semantic-popup.css!" />
+  <can-import from="demo/semantic.min.css!" />
+
+  <div class="demo">
+
+    <p>Popup with a title and data-content</p>
+    <div semantic-popup semantic-on="click" class="ui teal button" data-title="Using click events" data-content="Clicked popups will close if you click away, but not if you click inside the popup">Click Me</div>
+
+    <p>Popup Menu:</p>
+    <div class="item" semantic-popup semantic-on="click" semantic-hoverable="true" semantic-position="bottom left">
+      <img src="/demo/nan.jpg" class="ui avatar image"> Hello user!
+    </div>
+    <div class="ui vertical menu popup hidden">
+      <a class="item">Applications</a>
+      <a class="item">International Students</a>
+      <a class="item">Logout</a>
+    </div>
+
+    <p>Popup with inline content, popups on hover (default setting):</p>
+    <div class="ui menu">
+      <a class="browse item" semantic-popup semantic-position="bottom left" semantic-hoverable="true">
+        Browse
+      </a>
+      <div class="ui fluid popup bottom left transition hidden" style="top: 554px; left: 1px; bottom: auto; right: auto; width: 761px;">
+        <div class="ui four column relaxed divided grid">
+          <div class="column">
+            <h4 class="ui header">Fabrics</h4>
+            <div class="ui link list">
+              <a class="item">Cashmere</a>
+              <a class="item">Linen</a>
+              <a class="item">Cotton</a>
+              <a class="item">Viscose</a>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="ui header">Size</h4>
+            <div class="ui link list">
+              <a class="item">Small</a>
+              <a class="item">Medium</a>
+              <a class="item">Large</a>
+              <a class="item">Plus Sizes</a>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="ui header">Colors</h4>
+            <div class="ui link list">
+              <a class="item">Neutrals</a>
+              <a class="item">Brights</a>
+              <a class="item">Pastels</a>
+            </div>
+          </div>
+          <div class="column">
+            <h4 class="ui header">Types</h4>
+            <div class="ui link list">
+              <a class="item">Knitwear</a>
+              <a class="item">Outerwear</a>
+              <a class="item">Pants</a>
+              <a class="item">Shoes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</script>
+
+<!-- The data for the above template. -->
+<script src="../node_modules/steal/steal.js" main="can/view/autorender/"></script>
