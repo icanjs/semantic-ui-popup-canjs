@@ -9,7 +9,7 @@ SemanticUI's CSS should be imported separately. You can use `semantic-ui-less` p
 
 [Settings](http://semantic-ui.com/modules/popup.html#/settings) of the popup can be defined as "semantic"-prefixed attributes. E.g. to define `position` as `bottom left` you can add `semantic-position="bottom left"` attribute (see Usage section).
 
-If you need to use SemanticUI Popup `callbacks` then you are probably a jQuery-style guy and you don't need this wrapper :)
+If you need to use SemanticUI Popup `callbacks` then you are probably a jQuery-style developer and you don't need this wrapper :)
 
 ## Demo
 
